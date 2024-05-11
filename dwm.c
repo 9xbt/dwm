@@ -2159,8 +2159,6 @@ main(int argc, char *argv[])
 		die("pledge");
 #endif /* __OpenBSD__ */
 	scan();
-	system("xwallpaper --output HDMI-1 --stretch ~/Wallpapers/Vertical.png");
-	system("xwallpaper --output DP-1 --stretch ~/Wallpapers/Normal.png");
 	run();
 	cleanup();
 	XCloseDisplay(dpy);
