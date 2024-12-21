@@ -1916,6 +1916,9 @@ toggleview(const Arg *arg)
 void
 togglewin(const Arg *arg)
 {
+	if (!arg || !arg->v)
+        return;
+	
 	Client *c = (Client*)arg->v;
 
 	if (c == selmon->sel) {
