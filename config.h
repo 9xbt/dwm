@@ -7,8 +7,8 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "SourceCodePro:size=12" };
-static const char dmenufont[]       = "SourceCodePro:size=12";
+static const char *fonts[]          = { "IBM Plex Mono:size=12" };
+static const char dmenufont[]       = "IBM Plex Mono:size=12";
 static unsigned int baralpha        = 0xdd; // 0xd0
 static unsigned int borderalpha     = OPAQUE;
 static const char col_gray1[]       = "#222222";
@@ -66,8 +66,8 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[]  = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]   = { "alacritty", NULL };
 static const char *yasscmd[]   = { "bash", "/home/xrc2/.screenshot.sh", NULL };
-static const char *incVolume[] = { "amixer", "-D", "pulse", "set", "Master", "5%+", NULL };
-static const char *decVolume[] = { "amixer", "-D", "pulse", "set", "Master", "5%-", NULL };
+static const char *incVolume[] = { "bash", "/home/xrc2/.volume.sh", "3%+", NULL };
+static const char *decVolume[] = { "bash", "/home/xrc2/.volume.sh", "3%-", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        		 function        argument */
