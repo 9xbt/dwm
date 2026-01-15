@@ -36,6 +36,11 @@ static const Rule rules[] = {
 	{ "Firefox",                NULL,  NULL, 1 << 8,  0,           -1 },
 	{ "Qemu-system-i386",       NULL,  NULL, 0,       1,           -1 },
 	{ "Qemu-system-x86_64",     NULL,  NULL, 0,       1,           -1 },
+	{ "Qemu-system-aarch64",    NULL,  NULL, 0,       1,           -1 },
+	/* -display sdl variants */
+	{ "qemu-system-i386",       NULL,  NULL, 0,       1,           -1 },
+	{ "qemu-system-x86_64",     NULL,  NULL, 0,       1,           -1 },
+	{ "qemu-system-aarch64",    NULL,  NULL, 0,       1,           -1 },
 };
 
 /* layout(s) */
